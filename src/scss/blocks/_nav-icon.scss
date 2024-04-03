@@ -84,6 +84,11 @@
 	z-index: 999;
 	// display: none;
 }
+@media only screen and (min-width: 768px) {
+	.mobile-nav-btn {
+visibility: hidden;
+	}
+}
 
 // @media (max-width: 1000px) {
 // 	.mobile-nav-btn {
