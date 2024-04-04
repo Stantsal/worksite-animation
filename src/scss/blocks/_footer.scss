@@ -1,12 +1,13 @@
 .footer {
-  background-color: rgb(39, 39, 39);
-  padding: 30px 0;
-  font-size: 32px;
+  background-image: url('../../img/железо2.jpg');
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  padding: 20px 0;
+  font-size: 22px;
   color: #fff;
 
-  h1 {
-    font-size: 32px;
-  }
 
   a {
     // color: var(--link-color);

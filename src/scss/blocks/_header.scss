@@ -1,5 +1,10 @@
 .header {
-	background-color: rgb(39, 39, 39);
+
+	background-image: url('../../img/железо2.jpg');
+	background-position: center center; /* x y */
+	background-size: cover;
+	background-repeat: no-repeat;
+	
 	padding: 20px 0;
 
 	&__row {
@@ -7,5 +12,7 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+	
+	
 }
 
