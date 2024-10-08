@@ -1,12 +1,11 @@
 .footer {
-  background-image: url('../../img/железо2.jpg');
-  background-position: center center; /* x y */
-  background-size: cover;
-  background-repeat: no-repeat;
-  
-  padding: 20px 0;
+  padding: 5px 0;
   font-size: 22px;
   color: #fff;
+  background-color: #2e2d2d;
+  & p {
+    color: #fff;
+  }
 
 
   a {
@@ -31,3 +30,4 @@
   align-items: center;
   justify-content: center;
 }
+

@@ -10,8 +10,11 @@ body {
 	color: var(--text-color);
 	font-family: var(--font-main);
 	text-wrap: balance;
-	font-weight: 400;
+	font-weight: normal;
 	font-style: normal;
+	letter-spacing:1.5px;
+	color: white;
+	
 }
 
 img {
@@ -19,6 +22,13 @@ img {
 }
 
 a {
+	color: var(--link-color);
+	// &.active {
+	// 	color: #eca242;
+	// 	text-decoration: underline;
+	
+}
+span {
 	color: var(--link-color);
 	&.active {
 		color: #eca242;
@@ -28,7 +38,7 @@ a {
 @media (any-hover: hover) {
 	a:hover {
 		color: #eca242;
-		transition: background-color 0.1s linear;
+		transition: background-color 0.1s linear;	
 	}
 }
 
@@ -49,9 +59,4 @@ pre.code {
 	font-family: "Bebas Neue", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-}
-h1 {
-	font-size: 20px;
-	color: #fff;
-	text-align: center;
 }

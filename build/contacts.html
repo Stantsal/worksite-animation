@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Service and spare parts for metalworking equipment.</title>
+		<link rel="favicon" href="./img/favicons/favicon.ico" />
+		<link rel="stylesheet" href="./css/contacts.css" />
+	</head>
+	<body>
+		<div class="contacts-bg">
+			<header class="header container">
+				<div class="container">
+					<div class="header__row">
+						<div class="logo">
+							<a href="">
+								<picture>
+									<source srcset="./img/logo.webp 1x, ./img/logo@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/logo.png 1x, ./img/logo@2x.png 2x" type="image/png" />
+									<img class="logo__img" src="./img/logo.png" alt="logo" /> </picture
+							></a>
+						</div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li><a href="index.html" class="nav-link">Service</a></li>
+								<li><a href="index.html#CO2laser parts" class="nav-link">Spare parts</a></li>
+								<li><a href="index.html#Filtering system" class="nav-link">Filtering systems</a></li>
+								<li><a href="contacts.html" class="nav-link">Contacts</a></li>
+								<div class="language-switcher">
+									<button class="lang-btn" data-lang="en">
+										<span class="text">EN</span>
+										<span class="flag flag-en"></span>
+									</button>
+									<button class="lang-btn" data-lang="ru">
+										<span class="text">RU</span>
+										<span class="flag flag-ru"></span>
+									</button>
+									<button class="lang-btn" data-lang="ge">
+										<span class="text">GE</span>
+										<span class="flag flag-ge"></span>
+									</button>
+								</div>
+							</ul>
+						</nav>
+						<button class="mobile-nav-btn">
+							<div class="nav-icon"></div>
+						</button>
+					</div>
+				</div>
+			</header>
+			<div class="mobile-nav">
+				<ul class="mobile-nav__list">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="docs.html">Документация</a></li>
+				</ul>
+			</div>
+
+			<main class=" contacts-main">
+				<div class="contacts__header">
+					<h1 class="contacts__title">Welcome! Contact Us</h1>
+					<p class="contacts__text">We&#160;are happy to&#160;help. You can contact us&#160;using the information below or&#160;the feedback form.</p>
+				</div>
+
+				<section class="contacts__info">
+					<h2 class="contacts__info-title">Contact Information</h2>
+					<p class="contacts__info-text">Email: <a href="mailto:example@company.com">example@company.com</a></p>
+					<p class="contacts__info-text">Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+					<p class="contacts__info-text">Address: 123 Главная улица, Москва, Россия</p>
+					<p class="contacts__info-text">Business Hours: Mon-Fri 9:00 AM&#160;&#8212; 6:00 PM</p>
+				</section>
+
+				<div class="contacts__container">
+					<section class="contacts__form-container">
+						<h2 class="contacts__form-title">Feedback Form</h2>
+						<form id="contacts-form" onsubmit="sendEmail(); return false;">
+							<div class="contacts__form-group">
+								<input type="text" id="name" name="name" class="contacts__input" placeholder="Your Name" required />
+							</div>
+							<div class="contacts__form-group">
+								<input type="email" id="email" name="email" class="contacts__input" placeholder="Your Email" required />
+							</div>
+							<div class="contacts__form-group">
+								<textarea id="message" name="message" rows="5" class="contacts__textarea" placeholder="Your Question" required></textarea>
+							</div>
+							<button type="submit" class="contacts__button">Send</button>
+						</form>
+					</section>
+
+					<section class="contacts__map-container">
+						<h2 class="contacts__map-title">Our Location</h2>
+						<div>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456!2d144.9630575!3d-37.8142176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b7df88af3b%3A0xf065efbff34d7ea1!2sYour%20Company!5e0!3m2!1sen!2sru!4v1600000000000!5m2!1sen!2sru"
+								allowfullscreen=""
+								aria-hidden="false"
+								tabindex="0"
+							>
+							</iframe>
+						</div>
+					</section>
+				</div>
+			</main>
+
+			<footer class="footer container">
+				<div class="container">
+					<div class="social">
+						<div class="logo">
+							<a href="">
+								<picture>
+									<source srcset="./img/logo_small.webp 1x, ./img/logo_small@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/logo_small.png 1x, ./img/logo_small@2x.png 2x" type="image/png" />
+									<img class="logo__img--small" src="./img/logo_small.png" alt="logo_small" /> </picture
+							></a>
+						</div>
+						<a href="https://www.facebook.com/" class="social-item">
+							<svg class="icon icon social-icon">
+								<use href="./img/svgsprite/sprite.symbol.svg#faceboock"></use>
+							</svg>
+							<span>Facebook</span>
+						</a>
+						<a href="https://www.instagram.com/?hl=ru" class="social-item">
+							<svg class="icon icon social-icon">
+								<use href="./img/svgsprite/sprite.symbol.svg#instagram"></use>
+							</svg>
+							<span>Instagram</span>
+						</a>
+					</div>
+					<div class="footer__copyright">
+						<p>
+							&reg ServiceMT LLC &copy All rights reserved. Created by
+							<a href="malito:pavelstantsal@gmail.com" target="_blank">Pavel Stantsal pavelstantsal@gmail.com</a>
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="./js/contacts.bundle.js"></script>
+	</body>
+</html>
