@@ -1,74 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Service and spare parts for metalworking equipment.</title>
     <link rel="favicon" href="../img/favicons/favicon.ico" />
     <link rel="stylesheet" href="./css/contacts.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="contacts-bg">
+      @@include('blocks/header.html')
+      <main class=" contacts-main">
+        <div class="contacts__header">
+          <h1 class="contacts__title">Welcome! Contact Us</h1>
+          <p class="contacts__text">
+            We are happy to help.<br />You can contact us using the information
+            below or the feedback form..
+          </p>
+        </div>
+        <section class="contacts__info">
+          <h2 class="contacts__info-title">Contact Information</h2>
+          <p class="contacts__info-text">
+            Email: <a href="mailto:info@servismt.ge">info@servismt.ge</a>
+          </p>
+          <p class="contacts__info-text">
+            Phone: <a href="tel:+995-599-93-65-13"> (+995) 599 93-65-13</a>
+          </p>
+          <p class="contacts__info-text">
+            Phone: <a href="tel:+995-585-89-10-85"> (+995) 585 89-10-85</a>
+          </p>
+          <p class="contacts__info-text">
+            Address: Georgia, Tbilisi, st. Ushangi Chkheidze, building 23,
+            GE-0102
+          </p>
+          <p class="contacts__info-text">
+            Business Hours: Mon-Fri 9:00 AM - 6:00 PM
+          </p>
+        </section>
+        <div class="contacts__container">
+          <section class="contacts__form-container">
+            <h2 class="contacts__form-title">Feedback Form</h2>
+            <form id="contacts-form" onsubmit="sendEmail(); return false;">
+              <div class="contacts__form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="contacts__input"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="contacts__form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="contacts__input"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="contacts__form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="contacts__textarea"
+                  placeholder="Your Question"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="contacts__button">Send</button>
+            </form>
+          </section>
 
-     @@include('blocks/header.html')
-        <main class=" contacts-main">
-            <div class="contacts__header">
-                <h1 class="contacts__title">Welcome! Contact Us</h1>
-                <p class="contacts__text">We are happy to help. You can contact us using the information below or the feedback form..</p>
+          <section class="contacts__map-container">
+            <h2 class="contacts__map-title">Our Location</h2>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d744.632874986108!2d44.792589321748224!3d41.70904854165065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd98cac7bb2429f%3A0xc4f4b1da198941d6!2sServisMT!5e0!3m2!1sen!2sru!4v1729098894755!5m2!1sen!2sru"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+                allowfullscreen="" aria-hidden="false" tabindex="0">
+              </iframe>
             </div>
-        
-            <section class="contacts__info">
-                <h2 class="contacts__info-title">Contact Information</h2>
-                <p class="contacts__info-text">
-                    Email: <a href="mailto:example@company.com">example@company.com</a>
-                </p>
-                <p class="contacts__info-text">
-                    Phone: <a href="tel:+1234567890">+123 456 7890</a>
-                </p>
-                <p class="contacts__info-text">Address: 123 Главная улица, Москва, Россия</p>
-                <p class="contacts__info-text">Business Hours: Mon-Fri 9:00 AM - 6:00 PM</p>
-            </section>
-        
-            <div class="contacts__container">
-                <section class="contacts__form-container">
-                    <h2 class="contacts__form-title">Feedback Form</h2>
-                    <form id="contacts-form" onsubmit="sendEmail(); return false;">
-                        <div class="contacts__form-group">
-                            <input type="text" id="name" name="name" class="contacts__input" placeholder="Your Name" required>
-                        </div>
-                        <div class="contacts__form-group">
-                            <input type="email" id="email" name="email" class="contacts__input" placeholder="Your Email" required>
-                        </div>
-                        <div class="contacts__form-group">
-                            <textarea id="message" name="message" rows="5" class="contacts__textarea" placeholder="Your Question" required></textarea>
-                        </div>
-                        <button type="submit" class="contacts__button">Send</button>
-                    </form>
-                </section>
-        
-                <section class="contacts__map-container">
-                    <h2 class="contacts__map-title">Our Location</h2>
-                    <div>
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456!2d144.9630575!3d-37.8142176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b7df88af3b%3A0xf065efbff34d7ea1!2sYour%20Company!5e0!3m2!1sen!2sru!4v1600000000000!5m2!1sen!2sru" 
-                            allowfullscreen="" 
-                            aria-hidden="false" 
-                            tabindex="0">
-                        </iframe>
-                    </div>
-                </section>
-            </div>
-        </main>
-        
-@@include('blocks/footer.html')
+          </section>
+        </div>
+      </main>
+
+      @@include('blocks/footer.html')
     </div>
     <script src="./js/contacts.bundle.js"></script>
-</body>
+  </body>
 </html>
-
-
-
-
-
-

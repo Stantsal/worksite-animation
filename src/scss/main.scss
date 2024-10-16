@@ -1,16 +1,15 @@
 /* Base */
-@import './base/reset';
-@import './base/vars';
-@import './base/mixins';
-@import './base/fontsAutoGen';
-@import './base/base';
-@import './base/utils'; // Тест на ошибку
-@import './base/containers';
-@import './base/sticky-footer';
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/fontsAutoGen";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/sticky-footer";
 
 /* Blocks */
-@import './blocks/*.scss';
-   
+@import "./blocks/*.scss";
 
 .container-service {
   display: flex;
@@ -24,66 +23,62 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  
-  
 }
-// h1 {
-//   border: 5px solid rgba($color: #ffffff, $alpha: 1);
-//   padding: 50px 20px;
-//   top: 50;
-//   background-color:rgba($color: #000000, $alpha: 0.5);
-//   // box-shadow: 5px 5px 33px 10px #ffffff;
-// }
+
 .service-bg {
-  background-image: url('../img/bg.jpg'); /* Устанавливаем фоновое изображение */
-  background-size: cover; /* Изображение будет растягиваться на всю ширину */
-  background-position: center; /* Центрируем изображение */
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
   color: white;
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  height:45vh;
+  height: 45vh;
 }
 .container-hello {
   display: flex;
   justify-content: center;
   border: 1px solid rgba($color: #eca242, $alpha: 1);
-  background-color:rgba($color: #363744, $alpha: 1);
- 
+  background-color: rgba($color: #363744, $alpha: 1);
 }
 .title__hello {
- text-align: center;
- padding-bottom: 5vh;
-
+  text-align: center;
+  padding-bottom: 5vh;
 }
-  
-  
+
 .card-container {
   display: flex;
   gap: 30px;
   justify-content: center;
   padding: 3vh;
-  background-color:rgba($color: #191927, $alpha: 1);
+  background-color: rgba($color: #191927, $alpha: 1);
 }
 
 .card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(240, 239, 239, 0.3);
+  border: 1px solid #ccc;
+  border-radius: 8px;
   padding: 20px;
   text-align: center;
-  width: 400px;
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: #ffffff;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05);
 }
 
-.icon svg {
-  width: 50px;
-  height: 50px;
-  color: #007bff;
+.gear-icon {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 h3 {
@@ -92,25 +87,24 @@ h3 {
   color: #eca242;
 }
 
-.card, p {
+.card,
+.card__subtitle {
   font-size: 0.9rem;
-  
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #000000;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
 }
 
 .co2-container-parts {
-  // max-width: 1440px;
   margin: 0 auto;
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color:rgba($color: #363744, $alpha: 1);
+  background-color: rgba($color: #363744, $alpha: 1);
 }
 
-/* Заголовок с линиями по бокам */
 .co2-title-container {
   display: flex;
   align-items: center;
@@ -198,16 +192,12 @@ h2 {
   color: #ffffff;
 }
 
-
-
-
 .container-parts {
-  // max-width: 1440px;
   margin: 0 auto;
   text-align: center;
-  padding-top:50px;
+  padding-top: 50px;
   padding-bottom: 50px;
-  background-color:rgba($color: #191927, $alpha: 1);
+  background-color: rgba($color: #191927, $alpha: 1);
 }
 
 /* Заголовок с линиями по бокам */
@@ -268,7 +258,6 @@ h2 {
   color: #fff;
   padding: 10px;
   box-sizing: border-box;
-  // text-align: center;
 }
 
 /* Кнопка */
@@ -290,7 +279,3 @@ button {
 button:hover {
   background-color: #b6905f;
 }
-
-
-
-

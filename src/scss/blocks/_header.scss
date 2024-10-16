@@ -95,6 +95,29 @@
 
 
 p {
-    font-size: 24px;
     color: #333;
+}
+
+
+.contacts__info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contacts__info-text {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Интерактивные ссылки */
+.contacts__info-text a {
+    color: #eca242;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacts__info-text a:hover {
+    color: #b6905f;
 }
